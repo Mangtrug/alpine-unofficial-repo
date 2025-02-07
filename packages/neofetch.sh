@@ -26,7 +26,7 @@ unzip 7.1.0.zip || { echo -e "\e[1;31mErro ao descompactar o arquivo.\e[0m"; exi
 rm -f 7.1.0.zip  # Remove o arquivo zip após extrair
 
 echo -e "\e[1;32m>> Copiando binário para /usr/local/bin...\e[0m"
-cp neofetch-7.1.0/neofetch /usr/local/bin || { echo -e "\e[1;31mErro ao copiar o binário.\e[0m"; exit 1; }
+sudo cp neofetch-7.1.0/neofetch /usr/local/bin || { echo -e "\e[1;31mErro ao copiar o binário.\e[0m"; exit 1; }
 
 echo -e "\e[1;32m>> Limpando arquivos temporários...\e[0m"
 rm -rf neofetch-7.1.0
