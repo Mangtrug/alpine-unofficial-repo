@@ -16,6 +16,7 @@ echo -e "\e[1;32m>> verificando dependencias...\e[0m"
 check_dependency unzip
 check_dependency zip
 
+echo -e "\e[1;32m>> baixando...\e[0m"
 wget https://github.com/dylanaraps/neofetch/archive/refs/tags/7.1.0.zip
 
 echo -r "\e[1;32m>> descompactando 7.1.0.zip...\e[0m"
