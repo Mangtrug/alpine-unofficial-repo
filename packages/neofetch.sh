@@ -9,8 +9,6 @@ check_dependency() {
         echo -e "\e[1;31m> O pacote $package não está instalado.\e[0m"
         echo "tentando instalar $package..."
         apk add "$package"
-        # Aqui você pode decidir se quer instalar a dependência ou não
-        # Exemplo: apk add "$package" para instalar
     fi
 }
 
