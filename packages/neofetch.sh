@@ -19,4 +19,3 @@ check_dependency unzip
 check_dependency zip
 
 # wget https://github.com/dylanaraps/neofetch/archive/refs/tags/7.1.0.zip
-
