@@ -14,7 +14,7 @@ check_dependency() {
     fi
 }
 
-echo -e "\e[1;32m>> verificando dependencias\e[0m"
+echo -e "\e[1;32m>> verificando dependencias...\e[0m"
 check_dependency unzip
 check_dependency zip
 
