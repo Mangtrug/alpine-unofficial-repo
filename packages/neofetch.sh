@@ -4,7 +4,7 @@ check_dependency() {
     
     # Verifica se o pacote está instalado
     if apk info "$package" &> /dev/null; then
-        echo "> O pacote $package está instalado."
+        echo -e "\e[1;34m>> O pacote $package está instalado.\e[0m"
     else
         echo -e "\e[1;31m> O pacote $package não está instalado.\e[0m"
         echo "tentando instalar $package..."
@@ -14,6 +14,7 @@ check_dependency() {
     fi
 }
 
+echo -e "\e[1;32m>> verificando dependencias\e[0m"
 check_dependency unzip
 check_dependency zip
 
